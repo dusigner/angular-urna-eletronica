@@ -19,8 +19,20 @@
                                                     <label class="control-label lbl">NÚMERO: </label>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <input id="digito1" type="text" class="mytxt" maxlength="1" readonly />
-                                                    <input id="digito2" type="text" class="mytxt" maxlength="1" readonly />
+                                                    <input
+                                                      id="digito1"
+                                                      type="text"
+                                                      class="mytxt"
+                                                      maxlength="1"
+                                                      [value]="displayNumero1"
+                                                      readonly />
+                                                    <input
+                                                      id="digito2"
+                                                      type="text"
+                                                      class="mytxt"
+                                                      maxlength="1"
+                                                      [value]="displayNumero2"
+                                                      readonly />
                                                 </div>
                                             </div>
                                         </div>
@@ -63,40 +75,71 @@
                     <div class="col-md-5 col-xs-6 direita text-center">
                         <div class="row">
                             <div class="col-md-4 col-xs-4">
-                                <button id="btnNumero1" class="btn btn-lg btn-primary btn-number">1</button>
+                                <button
+                                  type="button"
+                                  id="btnNumero1"
+                                  (click)="adicionarNumero('1')"
+                                  class="btn btn-lg btn-primary btn-number">1</button>
                             </div>
                             <div class="col-md-4 col-xs-4">
-                                <button id="btnNumero2" class="btn btn-lg btn-primary btn-number">2</button>
+                                <button
+                                  id="btnNumero2"
+                                  (click)="adicionarNumero('2')"
+                                  class="btn btn-lg btn-primary btn-number">2</button>
                             </div>
                             <div class="col-md-4 col-xs-4">
-                                <button id="btnNumero3" class="btn btn-lg btn-primary btn-number">3</button>
+                                <button
+                                  id="btnNumero3"
+                                  (click)="adicionarNumero('3')"
+                                  class="btn btn-lg btn-primary btn-number">3</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 col-xs-4">
-                                <button id="btnNumero4" class="btn btn-lg btn-primary btn-number">4</button>
+                                <button
+                                  id="btnNumero4"
+                                  (click)="adicionarNumero('4')"
+                                  class="btn btn-lg btn-primary btn-number">4</button>
                             </div>
                             <div class="col-md-4 col-xs-4">
-                                <button id="btnNumero5" class="btn btn-lg btn-primary btn-number">5</button>
+                                <button
+                                  id="btnNumero5"
+                                  (click)="adicionarNumero('5')"
+                                  class="btn btn-lg btn-primary btn-number">5</button>
                             </div>
                             <div class="col-md-4 col-xs-4">
-                                <button id="btnNumero6" class="btn btn-lg btn-primary btn-number">6</button>
+                                <button
+                                  id="btnNumero6"
+                                  (click)="adicionarNumero('6')"
+                                  class="btn btn-lg btn-primary btn-number">6</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 col-xs-4">
-                                <button id="btnNumero7" class="btn btn-lg btn-primary btn-number">7</button>
+                                <button
+                                  id="btnNumero7"
+                                  (click)="adicionarNumero('7')"
+                                  class="btn btn-lg btn-primary btn-number">7</button>
                             </div>
                             <div class="col-md-4 col-xs-4">
-                                <button id="btnNumero8" class="btn btn-lg btn-primary btn-number">8</button>
+                                <button
+                                  id="btnNumero8"
+                                  (click)="adicionarNumero('8')"
+                                  class="btn btn-lg btn-primary btn-number">8</button>
                             </div>
                             <div class="col-md-4 col-xs-4">
-                                <button id="btnNumero9" class="btn btn-lg btn-primary btn-number">9</button>
+                                <button
+                                  id="btnNumero9"
+                                  (click)="adicionarNumero('9')"
+                                  class="btn btn-lg btn-primary btn-number">9</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 col-md-offset-4">
-                                <button id="btnNumero0" class="btn btn-lg btn-primary btn-number">0</button>
+                                <button
+                                  id="btnNumero0"
+                                  (click)="adicionarNumero('0')"
+                                  class="btn btn-lg btn-primary btn-number">0</button>
                             </div>
                         </div>
                         <div class="row" style="padding-top: 10px;">
@@ -104,10 +147,14 @@
                                 <button id="btnAnular" class="btn btn-lg btn-default btn-acao">BRANCO</button>
                             </div>
                             <div class="col-md-4 col-xs-12">
-                                <button id="btnCorrigir" class="btn btn-lg btn-warning btn-acao">CORRIGE</button>
+                                <button
+                                  id="btnCorrigir"
+                                  (click)="corrigir()"
+                                  class="btn btn-lg btn-warning btn-acao">CORRIGE</button>
                             </div>
                             <div class="col-md-4 col-xs-12">
-                                <button id="btnConfirmar" class="btn btn-lg btn-success btn-acao">CONFIRMA</button>
+                                <button
+                                  id="btnConfirmar" class="btn btn-lg btn-success btn-acao">CONFIRMA</button>
                             </div>
                         </div>
                     </div>

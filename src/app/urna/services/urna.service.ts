@@ -1,3 +1,9 @@
+/**
+ * Serviço responsável por executar a urna eletrônica
+ * @author Eduardo Soares <eduardo@dusigner.com.br>
+ * @since 1.0.0
+ */
+
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,4 +12,5 @@ import { Injectable } from '@angular/core';
 export class UrnaService {
 
   constructor() { }
+
 }

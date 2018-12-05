@@ -1,0 +1,1 @@
+export * from './urna.component';
